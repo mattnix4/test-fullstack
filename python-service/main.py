@@ -17,4 +17,4 @@ def chat(payload: ChatIn):
     if not q:
         raise HTTPException(status_code=400, detail="message required") 
     
-    return {"answer": "Hello", "sources": "test"}
+    return {"answer": "Hello", "sources": ["test"]}
