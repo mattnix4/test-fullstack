@@ -9,6 +9,8 @@ import logging
 
 app = FastAPI(title="FAQ Chatbot")
 
+LOG_FILE = os.path.join(os.path.dirname(__file__), "chatbot.log")
+
 # CONFIG LOGGING
 logger = logging.getLogger("chatbot")
 logger.setLevel(logging.INFO)
@@ -16,10 +18,20 @@ logger.setLevel(logging.INFO)
 console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.INFO)
 
+file_handler = logging.FileHandler(LOG_FILE, encoding="utf-8")
+file_handler.setLevel(logging.INFO)
+
 formatter = logging.Formatter(
     "[%(asctime)s] %(levelname)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
 )
 
+console_handler.setFormatter(formatter)
+file_handler.setFormatter(formatter)
+
+if not logger.handlers:
+    logger.addHandler(console_handler)
+    logger.addHandler(file_handler)
+    
 DATA_PATH = os.path.join(os.path.dirname(__file__), "faq.json")
 with open(DATA_PATH, "r", encoding="utf-8") as f:
     faq = json.load(f)
@@ -42,7 +54,7 @@ def chat(payload: ChatIn):
     best = None
     best_score = 0.0
     for item in faq:
-        simi = similarity(q, item["q"])
+        simi = 0.6 * similarity(q, item["q"])
         if any(tok in item["q"].lower() for tok in q.lower().split()):
             simi += 0.4
         if simi > best_score:
