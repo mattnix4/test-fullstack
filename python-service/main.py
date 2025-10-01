@@ -7,18 +7,24 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
 import logging
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# .env
+FRONTEND_URLS = os.getenv("FRONTEND_URLS", "http://localhost:3000")
+ALLOWED_ORIGINS = [url.strip() for url in FRONTEND_URLS.split(",")]
+LOG_FILE = os.getenv("LOG_FILE", os.path.join(os.path.dirname(__file__), "chatbot.log"))
 
 app = FastAPI(title="FAQ Chatbot")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-LOG_FILE = os.path.join(os.path.dirname(__file__), "chatbot.log")
 
 # CONFIG LOGGING
 logger = logging.getLogger("chatbot")
