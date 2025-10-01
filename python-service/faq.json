@@ -1,0 +1,11 @@
+[{
+    "id": "faq#ebitda",
+    "q": "Qu'est-ce que l'EBITDA ?",
+    "a": "L'EBITDA est un indicateur de performance opérationnelle avant intérêts, impôts, dépréciations et amortissements."
+    },
+    {
+    "id": "faq#marge-brute",
+    "q": "À quoi sert la marge brute ?",
+    "a":"Elle mesure la part du chiffre d'affaires restant après le coût des ventes, utile pour suivre la performance commerciale et pricing."
+    }
+]
