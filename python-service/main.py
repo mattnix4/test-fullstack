@@ -3,11 +3,20 @@ from difflib import SequenceMatcher
 import json
 import os
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
 import logging
 
 app = FastAPI(title="FAQ Chatbot")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 LOG_FILE = os.path.join(os.path.dirname(__file__), "chatbot.log")
 
