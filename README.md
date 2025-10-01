@@ -2,7 +2,7 @@
 
 ## Structure
 
--   `/frontend/test-taram` --- Next.js application (pages router) + API
+-   `/frontend` --- Next.js application (pages router) + API
     routes
 -   `/python-service` --- FastAPI chatbot (FAQ)
 
@@ -39,7 +39,7 @@ LOG_FILE=chatbot.log
 ## Lancer le frontend
 
 ``` bash
-cd frontend/test-taram
+cd frontend
 npm install
 npm run dev
 ```
