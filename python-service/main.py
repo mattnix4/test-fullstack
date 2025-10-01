@@ -1,12 +1,24 @@
+from datetime import datetime
 from difflib import SequenceMatcher
 import json
 import os
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
+import logging
 
 app = FastAPI(title="FAQ Chatbot")
 
+# CONFIG LOGGING
+logger = logging.getLogger("chatbot")
+logger.setLevel(logging.INFO)
+
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+
+formatter = logging.Formatter(
+    "[%(asctime)s] %(levelname)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
+)
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "faq.json")
 with open(DATA_PATH, "r", encoding="utf-8") as f:
@@ -42,5 +54,8 @@ def chat(payload: ChatIn):
     else:
         answer = best["a"]
         sources = [best.get("id", "faq#none")]
-        
+    
+    time_log = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    logger.info(f"[{time_log}] q: {q} -> a: {answer[:80]} (score={best_score:.3f})")
+    
     return {"answer": answer, "sources": sources}
