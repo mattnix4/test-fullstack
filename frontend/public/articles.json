@@ -3,12 +3,90 @@
     "id": "a1",
     "title": "Qu'est-ce que l'EBITDA ?",
     "date": "2024-11-02",
-    "summary": "Définition et intérêt pour l'analyse de performance."
+    "summary": "Définition et intérêt pour l'analyse de performance opérationnelle."
   },
   {
     "id": "a2",
     "title": "Marge brute vs marge nette",
     "date": "2025-01-15",
-    "summary": "Comprendre les niveaux de marge et leurs usages."
+    "summary": "Comprendre les différents niveaux de marge et leurs usages."
+  },
+  {
+    "id": "a3",
+    "title": "Flux de trésorerie",
+    "date": "2024-09-10",
+    "summary": "Comment lire et interpréter les flux de trésorerie d'une entreprise."
+  },
+  {
+    "id": "a4",
+    "title": "Ratio d'endettement",
+    "date": "2024-12-05",
+    "summary": "Mesurer la structure financière et le risque d'une entreprise."
+  },
+  {
+    "id": "a5",
+    "title": "ROE et ROA : différences clés",
+    "date": "2025-01-20",
+    "summary": "Comprendre le rendement des capitaux propres et des actifs."
+  },
+  {
+    "id": "a6",
+    "title": "Le besoin en fonds de roulement",
+    "date": "2024-10-18",
+    "summary": "Analyser le BFR pour optimiser la gestion de trésorerie."
+  },
+  {
+    "id": "a7",
+    "title": "Valorisation par DCF",
+    "date": "2024-08-22",
+    "summary": "La méthode des flux de trésorerie actualisés expliquée."
+  },
+  {
+    "id": "a8",
+    "title": "Ratios de liquidité",
+    "date": "2024-11-28",
+    "summary": "Current ratio et quick ratio pour évaluer la solvabilité."
+  },
+  {
+    "id": "a9",
+    "title": "P/E Ratio : mode d'emploi",
+    "date": "2025-01-08",
+    "summary": "Utiliser le ratio cours/bénéfice pour comparer les actions."
+  },
+  {
+    "id": "a10",
+    "title": "Free Cash Flow",
+    "date": "2024-09-30",
+    "summary": "Calculer et interpréter le flux de trésorerie disponible."
+  },
+  {
+    "id": "a11",
+    "title": "EV/EBITDA multiple",
+    "date": "2024-12-12",
+    "summary": "Un indicateur clé pour la valorisation d'entreprise."
+  },
+  {
+    "id": "a12",
+    "title": "Working Capital Management",
+    "date": "2024-10-05",
+    "summary": "Optimiser la gestion du capital circulant au quotidien."
+  },
+  {
+    "id": "a13",
+    "title": "Analyse du point mort",
+    "date": "2024-11-15",
+    "summary": "Déterminer le seuil de rentabilité d'une activité."
+  },
+  {
+    "id": "a14",
+    "title": "Coût moyen pondéré du capital",
+    "date": "2025-01-03",
+    "summary": "Le WACC comme taux d'actualisation en finance d'entreprise."
+  },
+  {
+    "id": "a15",
+    "title": "Dividendes et politique de distribution",
+    "date": "2024-08-15",
+    "summary": "Comprendre les enjeux de la rémunération des actionnaires."
   }
 ]
