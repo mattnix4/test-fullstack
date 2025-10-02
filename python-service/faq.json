@@ -1,11 +1,77 @@
-[{
+[
+  {
     "id": "faq#ebitda",
     "q": "Qu'est-ce que l'EBITDA ?",
-    "a": "L'EBITDA est un indicateur de performance opérationnelle avant intérêts, impôts, dépréciations et amortissements."
-    },
-    {
+    "a": "L'EBITDA (Earnings Before Interest, Taxes, Depreciation and Amortization) est un indicateur de performance opérationnelle avant intérêts, impôts, dépréciations et amortissements."
+  },
+  {
     "id": "faq#marge-brute",
     "q": "À quoi sert la marge brute ?",
-    "a":"Elle mesure la part du chiffre d'affaires restant après le coût des ventes, utile pour suivre la performance commerciale et pricing."
-    }
+    "a": "Elle mesure la part du chiffre d'affaires restant après le coût des ventes, utile pour suivre la performance commerciale et le pricing."
+  },
+  {
+    "id": "faq#cashflow",
+    "q": "Qu'est-ce que le flux de trésorerie ?",
+    "a": "Le flux de trésorerie (cash flow) représente les entrées et sorties de liquidités d'une entreprise sur une période donnée."
+  },
+  {
+    "id": "faq#marge-nette",
+    "q": "Quelle est la différence entre marge brute et marge nette ?",
+    "a": "La marge brute mesure la rentabilité après coûts directs, tandis que la marge nette inclut tous les coûts (opérationnels, intérêts, impôts)."
+  },
+  {
+    "id": "faq#roe",
+    "q": "Qu'est-ce que le ROE ?",
+    "a": "Le ROE (Return on Equity) mesure la rentabilité des capitaux propres, calculé comme bénéfice net divisé par capitaux propres."
+  },
+  {
+    "id": "faq#roa",
+    "q": "Qu'est-ce que le ROA ?",
+    "a": "Le ROA (Return on Assets) mesure l'efficacité avec laquelle une entreprise utilise ses actifs pour générer des profits."
+  },
+  {
+    "id": "faq#bfr",
+    "q": "Qu'est-ce que le BFR ?",
+    "a": "Le Besoin en Fonds de Roulement représente les ressources nécessaires pour financer le décalage entre encaissements et décaissements."
+  },
+  {
+    "id": "faq#fcf",
+    "q": "Qu'est-ce que le Free Cash Flow ?",
+    "a": "Le Free Cash Flow est le flux de trésorerie disponible après les investissements nécessaires au maintien de l'activité."
+  },
+  {
+    "id": "faq#pe-ratio",
+    "q": "Comment interpréter le P/E ratio ?",
+    "a": "Le Price-to-Earnings ratio compare le prix de l'action au bénéfice par action. Un P/E élevé peut indiquer des attentes de croissance."
+  },
+  {
+    "id": "faq#wacc",
+    "q": "Qu'est-ce que le WACC ?",
+    "a": "Le WACC (Weighted Average Cost of Capital) est le coût moyen pondéré du capital, utilisé comme taux d'actualisation en valorisation."
+  },
+  {
+    "id": "faq#current-ratio",
+    "q": "Qu'est-ce que le current ratio ?",
+    "a": "Le current ratio mesure la capacité à couvrir les dettes à court terme avec les actifs courants. Un ratio > 1 est généralement sain."
+  },
+  {
+    "id": "faq#quick-ratio",
+    "q": "Différence entre current ratio et quick ratio ?",
+    "a": "Le quick ratio exclut les stocks des actifs courants, offrant une vision plus stricte de la liquidité immédiate."
+  },
+  {
+    "id": "faq#dcf",
+    "q": "Comment fonctionne la méthode DCF ?",
+    "a": "La méthode DCF (Discounted Cash Flow) valorise une entreprise en actualisant ses flux de trésorerie futurs au taux WACC."
+  },
+  {
+    "id": "faq#ev-ebitda",
+    "q": "Qu'est-ce que le multiple EV/EBITDA ?",
+    "a": "C'est un ratio de valorisation comparant la valeur d'entreprise (EV) à l'EBITDA, utile pour comparer des sociétés du même secteur."
+  },
+  {
+    "id": "faq#point-mort",
+    "q": "Comment calculer le point mort ?",
+    "a": "Le point mort est le niveau d'activité où les revenus couvrent exactement les charges fixes et variables, sans profit ni perte."
+  }
 ]
